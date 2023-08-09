@@ -1,0 +1,310 @@
+body {
+  background-color: #000000;
+  box-sizing: border-box;
+  color: #cacaca;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, p, a, li, table, tr, td {
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  position: relative;
+}
+
+.table_container {
+  overflow: auto;
+}
+
+a {
+  color: white;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.header {
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+  background-color: #000000;
+  border-bottom: 2px solid #f3fe00;
+}
+
+.container {
+  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 40px;
+  width: 150px;
+}
+
+header > .container > div > a:first-of-type {
+  width: 150px;
+  display: inline-block;
+}
+.registration {
+  float: right;
+  background-color: #dd3333;
+  margin: 0 0 0 30px;
+  font-size: 15px;
+  padding: 10px 25px;
+  border: none;
+  transition: all 0.3s ease;
+  height: auto;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0;
+  color: #fff;
+}
+
+.content {
+  padding: 80px 0;
+}
+
+.row {
+  margin: 0 -20px;
+}
+
+#primary {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+article:first-of-type {
+  margin: 0 0 70px;
+}
+
+#search-container, #search-container:after, .archive .hentry-inner, .blog .hentry-inner, .dark-top-header, .hentry-inner, .sidebar .widget, .single-content-wraper, #breadcrumb, #respond {
+  background-color: #32373c;
+}
+
+img {
+  max-width: 100%;
+}
+
+.single-content-wraper > div {
+  padding: 30px;
+}
+
+.content_wrapper {
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #f9f9f9;
+  font-size: 2.2rem;
+}
+
+p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+}
+
+table {
+  margin: 0 auto 15px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.833em;
+  border: 1px solid #e7e7e7;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+footer > p {
+  text-align: center;
+}
+
+td > p {
+  margin: 0;
+}
+
+.main_wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#table {
+  overflow: visible;
+}
+
+table:first-of-type {
+  min-width: 400px;
+}
+
+.banner_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main_content {
+  display: flex;
+  gap: 30px;
+}
+
+.banner_image {
+  width: 350px;
+}
+
+.banner_container > a {
+  background-color: #fffb00;
+  font-size: 1.875rem;
+  border-color: #46aeff;
+  border: 2px solid;
+  color: black;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  padding: 12px 22px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.list_titles > li > a {
+  text-decoration: none;
+  color: #fffb00;
+}
+
+td > ul {
+  margin: 0;
+}
+
+td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.center_image {
+  width: 60%;
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app_container, .giris_container, .kayit_container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.mobile_app {
+  width: 490px;
+}
+
+.kayit_container > img {
+  width: 30%;
+}
+
+.homepage {
+  width: 100%;
+}
+
+.kayit {
+  width: 325px;
+}
+
+@media (max-width: 1024px) {
+  .main_wrapper {
+    flex-direction: column;
+  }
+
+  .banner_container {
+    margin-bottom: 20px;
+  }
+
+  .kayit_container {
+    flex-direction: column;
+  }
+
+  .kayit_container > img, .kayit {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  .logo {
+    width: 120px;
+  }
+
+  .kayit_container > img, .kayit{
+    width: 100%;
+  }
+
+  .app_container, .giris_container {
+    flex-direction: column;
+  }
+
+  .mobile_app, .giris{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .registration {
+    padding: 10px 17px;
+    margin-left: 10px;
+  }
+
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner_container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner_container > img {
+    width: 100%;
+  }
+
+  #table {
+    overflow: auto;
+  }
+
+  table:first-of-type {
+  min-width: 4px;
+  }
+
+  .center_image, .banner_image {
+    width: 100%;
+  }
+} 
